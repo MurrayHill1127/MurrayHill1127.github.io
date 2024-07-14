@@ -1,0 +1,20 @@
+  a.title        
+  { 
+      color:#000040; 
+      text-decoration:None 
+  }
+
+  a.title:hover 
+  { 
+      color:#0000FF; 
+      text-decoration:underline 
+  }
+
+  a.disabled 
+  {
+      pointer-events: none;
+      cursor: default;
+      text-decoration: none;
+      opacity: 0.5;
+  }
+
