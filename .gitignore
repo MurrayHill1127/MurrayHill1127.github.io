@@ -1,3 +1,4 @@
 *.a
-*.py
-.obsdian
+*.DS_Store
+*.obsdian
+
