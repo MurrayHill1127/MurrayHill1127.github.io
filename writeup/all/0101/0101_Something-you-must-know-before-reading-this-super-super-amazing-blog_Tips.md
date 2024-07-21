@@ -3,4 +3,4 @@
 
 #### Yes. It is inspired by [Charles Petzold's Blog](https://www.charlespetzold.com), whose minimalist style really touches me.
 
-![boy](./pics/boy.jpeg)
+![Charles Petzold](./pics/CharlesReadingOnRock.jpg)
