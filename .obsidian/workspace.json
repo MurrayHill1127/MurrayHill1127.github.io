@@ -4,35 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "93c60a06541e0cfc",
+        "id": "5b8c0951106929f8",
         "type": "tabs",
         "children": [
           {
-            "id": "629b1291bc97253a",
+            "id": "708c89120c8e66cb",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "blog/all/0101/0101_Something-you-must-know-before-reading-this-super-super-amazing-blog_Tips.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0087cc6d7ae0aec4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "blog/all/0101/0101_Something-you-must-know-before-reading-this-super-super-amazing-blog_Tips.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/all/0101/0101_Something-you-must-know-before-reading-this-super-super-amazing-blog_Tips.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "blog/all/0101/0101_Something-you-must-know-before-reading-this-super-super-amazing-blog_Tips.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "blog/all/0101/0101_Something-you-must-know-before-reading-this-super-super-amazing-blog_Tips.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -159,8 +138,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "0087cc6d7ae0aec4",
+  "active": "708c89120c8e66cb",
   "lastOpenFiles": [
+    "blog/all/0101/0101_Something-you-must-know-before-reading-this-super-super-amazing-blog_Tips.md",
     "writeup/index.py",
     "writeup/all",
     "blog/all/0101/0101_Something-you-must-know-before-reading-this-super-super-amazing-blog_Tips.html",
@@ -168,7 +148,6 @@
     "blog/all/2407/0721_Kendele_Homework.md",
     "blog/md2html.py",
     "www.charlespetzold.com.md",
-    "blog/all/0101/0101_Something-you-must-know-before-reading-this-super-super-amazing-blog_Tips.md",
     "about..md"
   ]
 }
