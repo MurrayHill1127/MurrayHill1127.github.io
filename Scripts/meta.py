@@ -60,7 +60,7 @@ def main():
 
     metadata = extract_metadata(md_file)
     base_name, ext = os.path.splitext(os.path.basename(md_file))
-    directory = generate_directory(metadata['type'], metadata['date'], base_name)
+    directory = generate_directory(metadata['type'].lower(), metadata['date'], base_name)
     link = "/" + directory + base_name + ".html"
 
     data = (
