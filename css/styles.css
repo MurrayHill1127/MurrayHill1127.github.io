@@ -1,0 +1,130 @@
+body 
+{
+	width: 720px;
+	margin-left:auto; 
+	margin-right:auto;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 16px; 
+}
+
+h1 
+{
+	text-align: center;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-variant: small-caps; 
+	font-size: 250%;
+	background-color: black;
+	color: white;  
+}
+
+a.header-link 
+{
+	color: white;
+	text-decoration: none;
+}
+
+.nav
+{
+	display: flex;
+	justify-content: space-around;
+	font-size: 150%;	
+	text-transform: uppercase;
+}            
+
+a.nav-link 
+{
+	color: black;
+	text-decoration: none;
+}
+
+a.nav-link:hover
+{
+	font-weight: bold;
+	font-style: italic;
+}	
+
+a.nav-link-current 
+{
+	color: green;
+	text-decoration: none;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.right  
+{ 
+	text-align:right; 
+}
+
+.center 
+{ 
+	text-align:center; 
+}
+
+footer
+{
+	text-align: right;
+}
+
+.flex-between
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+iframe
+{
+	/* 720 pixel body minus 560 pixel iframe width divided by 2 */
+	margin-left: 80px;
+	border: 0px;
+}
+
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.folder {
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.folder-name {
+    display: flex;
+    align-items: center; /* Align text vertically centered to icon */
+    margin: 5px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.folder.open > ul {
+    display: block;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px; /* Reduced margin to decrease space between icon and text */
+    vertical-align: middle; /* Align icon vertically in the middle of text */
+}
+
+ul > li {
+    margin: 5px 0;
+    padding-left: 20px; /* Indent child items */
+}
+
+.folder.open > ul > li {
+    padding-left: 40px; /* Further indent for nested folders */
+}
+
+/* Adjust line-height for better vertical alignment */
+.folder-name span {
+    display: inline-block;
+    line-height: 16px; /* Match this to the icon height */
+    vertical-align: middle; /* Ensure text aligns with the middle of the icon */
+    margin-bottom: 8px; /* Increase this value to push text lower */
+}
