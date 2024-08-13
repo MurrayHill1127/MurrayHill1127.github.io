@@ -6,7 +6,7 @@ from collections import defaultdict
 
 db_path = '../.meta.db'
 
-script_tag = '\n<script src="/script/script.js"></script>'
+script_tag = '\n<script src="../../../../script/script.js"></script>'
 
 folder_string = '''
 <li>
