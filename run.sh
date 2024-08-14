@@ -41,12 +41,4 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-echo "Generating .keep files"
-python3 keep.py
-if [ $? -ne 0 ]; then
-    echo "Failed to generate .keep files"
-    exit 1
-fi
-
-
 echo "All tasks completed successfully!"
