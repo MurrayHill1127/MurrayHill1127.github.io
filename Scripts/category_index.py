@@ -62,7 +62,7 @@ def get_meta_data(article_type):
     SELECT title, date, topic, link, category, filename
     FROM blog
     WHERE type = ?
-    ORDER BY date ASC 
+    ORDER BY date ASC, id ASC 
     """ 
     cursor.execute(query, (article_type,))
     articles = cursor.fetchall()
