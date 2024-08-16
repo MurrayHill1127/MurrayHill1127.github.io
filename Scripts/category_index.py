@@ -99,11 +99,11 @@ def get_children(node, level):
             children += text_string.format(node[key]['link'], node[key]['title'])
 
     if level == 0:
-        for key in node:
+        for key in sorted(node.keys()):
             if node[key]['type'] == 'folder':
                 children += root_folder_string.format(key, get_children(node[key]['children'], level+1))
     else:
-        for key in node:
+        for key in sorted(node.keys()):
             if node[key]['type'] == 'folder':
                 children += folder_string.format(key, get_children(node[key]['children'], level+1))
 
