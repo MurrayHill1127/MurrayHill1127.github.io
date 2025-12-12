@@ -1,0 +1,36 @@
+name: Build and Deploy Hexo Blog
+on:
+  push:
+    branches:
+      - main # 确保这里是您存放源码的分支名 (有时是 master)
+
+permissions:
+  contents: write # 显式赋予 GITHUB_TOKEN 写权限，以便推送到 gh-pages 分支
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4 # 升级到 v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4 # 升级到 v4
+        with:
+          node-version: '20' # Node 20 (LTS) 是目前推荐的稳定版本
+          cache: 'npm'       # 开启缓存，加速构建
+
+      - name: Install Dependencies
+        # 使用 npm ci 替代 npm install，更适合 CI 环境，严格依照 package-lock.json 安装
+        run: npm ci
+
+      - name: Build Hexo Site
+        run: npx hexo generate
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3 # v3 目前仍是该插件最稳定主流的版本
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          # user_name: 'github-actions[bot]' # 可选：自定义提交时的用户名
+          # user_email: 'github-actions[bot]@users.noreply.github.com' # 可选：自定义提交邮箱
